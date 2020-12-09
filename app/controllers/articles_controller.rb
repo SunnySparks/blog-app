@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   include ArticlesHelper
     def index
         @articles = Article.all
-      end
+    end
 
     def show
         @article = Article.find(params[:id])
